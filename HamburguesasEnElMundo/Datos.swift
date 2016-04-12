@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 
 class ColeccionDePaises{
-    
+    //arreglo de paises
     let paises = ["México", "U.S.A", "Italia", "Alemania", "Egipto", "Cánada", "Marruecos", "Turquía",
                   "Portugal", "España", "Brasil", "Argentina", "Chile", "Francia", "Australia",
                   "Holanda", "Rusia", "Camerún", "Jamaica", "Panama", "Polonia", "Ucrania", "Japón",
                   "China", "Indonesia", "Taiwan", "Vietnam", "Corea del Sur", "Croacia", "Lituania"]
-    
+    //funcion para obtener el pais aleatoriamente
     func obtenPais( )-> String{
         let posicion = Int (arc4random ()) % paises.count
         return paises [posicion]
@@ -23,11 +23,11 @@ class ColeccionDePaises{
 }
 
 class ColeccionDeHamburguesas{
-    
+    //arreglo de hamburguesas
     let hamburguesas = ["Española", "Argentina", "Ternera", "Arrachera", "Vaquera", "Bacon", "Ranchera", "Mexicana", "Texana", "BBQ", "Pechuga de pollo", "Americana", "Portuguesa",
         "De puerco", "Ternera", "Asiatica", "Light", "Mediterranea", "Vegetariana", "Tropical",
         "Brasileña", "Con Queso", "Italiana", "Alemana"]
-    
+    //funcion para obtener la hamburguesa aleatoriamente
     func obtenHamburguesa( )-> String{
         let posicion = Int (arc4random ()) % hamburguesas.count
         return hamburguesas [posicion]
@@ -36,6 +36,7 @@ class ColeccionDeHamburguesas{
     
 }
 
+//OPCIONAL para cambiar el color de fondo
 struct Colores {
     let colores = [UIColor (red: 210/255.0, green: 90/255.0, blue: 45/255.0, alpha: 1),
         UIColor (red: 40/255.0, green: 170/255.0, blue : 45/255.0, alpha: 1),
